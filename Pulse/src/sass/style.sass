@@ -1,0 +1,58 @@
+@import 'base/mixin'
+@import 'base/variables'
+*
+    font-family: 'Museo Sans Cyrl' , sans-serif
+.container  
+    max-width: 950px
+    margin: auto 0
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_logo
+        width: 250px
+        img
+            width: 100%
+    &_official
+        margin-right: 120px
+        font-size: 12px
+        line-height: 1.2
+        font-weight: 500
+        color: $white-colour
+        text-align: center
+        span
+            display: block
+            font-size: 18px
+            line-height: 1.2
+            font-weight: 700
+            color: $white-colour
+    &_phone
+        display: block
+        font-size: 18px
+        line-height: 1.2
+        font-weight: 700
+        color: $white-colour
+        &:hover
+            color: $white-colour
+            text-decoration: none
+            transition: 0.5s all
+            border: none
+            box-shadow: 3px 3px 20px $white-colour
+    &_contacts
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        button
+            margin-top: 5px
+@import 'blocks/carousel'
+@import 'blocks/answers'
+@import 'blocks/modal'
+@import 'blocks/footer'
+@import 'blocks/catalog'
+@import 'blocks/forms'
+@import 'blocks/promo'
+@import 'blocks/buttons'
+@import 'blocks/pluses'
+@import 'blocks/consultation'
+@import 'media'
+            

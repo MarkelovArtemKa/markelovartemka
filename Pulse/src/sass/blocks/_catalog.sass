@@ -1,0 +1,165 @@
+.catalog
+    padding-bottom: 100px
+    h2
+        text-align: center
+        font-size: 30px
+        font-weight: 700
+        text-transform: uppercase
+        color: #0d0d0d
+    &_tabs
+        margin-top: 70px
+        list-style-type: none
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 0px
+        padding-left: 0px
+    &_tab
+        width: 220px
+        height: 50px
+        border: 2px solid #d0d0d0
+        font-size: 18px
+        font-weight: 500
+        text-transform: uppercase
+        color: #6b6b6b
+        text-align: center
+        line-height: 48px
+        transform: skewX(-25deg)
+        margin: 0px 5px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px $main-colour
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            color: #ffffff
+            background-color: $main-colour
+            border: none
+    &_content
+        margin-top: 60px
+        display: none
+        flex-direction: row
+        justify-content: space-between
+        flex-wrap: wrap
+        &_active
+            display: flex
+        &_second
+            margin-top: 60px
+            display: none
+            flex-direction: row
+            justify-content: center
+            flex-wrap: wrap
+            &_active
+                display: flex
+
+
+
+    &-item  
+        width: 300px
+        min-height: 440px
+        background-color: #ffffff
+        border: 2px solid #e8e8e8
+        padding: 20px 20px 26px 20px
+        overflow: hidden
+        margin-bottom: 20px
+        &_img   
+            max-width: 100%
+            height: 200px   
+            display: block
+            margin: 0 auto
+        &_subtitle
+            margin-top: 20px
+            font-size: 16px
+            font-weight: 700
+            color: #0d0d0d
+            text-align: center
+        &_descr
+            margin-top: 16px
+            font-size: 14px
+            font-weight: 300
+            color: #0d0d0d
+            text-align: center
+        &_link  
+            display: block
+            margin-top: 17px    
+            font-size: 14px
+            font-weight: 500
+            text-decoration: underline
+            color: $main-colour
+            text-align: center
+            &:hover
+                color: $main-colour
+        hr
+            margin-top: 19px
+            margin-bottom: 21px
+            background-color: #e8e8e8
+            border-bottom: none
+        &_footer
+            display: flex
+            justify-content: space-between
+        &_old-price
+            font-size: 14px
+            font-weight: 300
+            color: #555555
+            text-decoration: line-through
+        &_price
+            font-size: 20px
+            font-weight: 700
+            color: #050505
+        &_wrapper
+            display: flex
+            width: calc( 200% + 40px )
+        &_content
+            margin-right: 20px
+            width: 50%
+            transform: translateX(-115%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 0px
+        &_list 
+            position: relative
+            width: 50%
+            margin-left: 20px 
+            transform: translateX(5%)
+            padding-right: 20px
+            transition: 0.5s all
+            padding-left: 19px
+            margin-bottom: 0px
+            list-style-type: none
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+            li
+                position: relative
+                font-size: 14px
+                font-weight: 300
+                color: #555555
+                margin-bottom: 20px
+                &:before
+                    content: ''
+                    position: absolute
+                    width: 5px
+                    height: 5px
+                    background-color: $main-colour
+                    left: -14px
+                    top: 7px
+        &_back
+            position: absolute
+            display: block
+            bottom: 0
+            left: 50%
+            transform: translateX(calc( -50% - 25px ))
+            color: $main-colour
+            font-size: 14px
+            font-weight: 500
+            text-decoration: underline
+            text-transform: uppercase
+            &:hover
+                color: $main-colour
+
+                    
+
+
